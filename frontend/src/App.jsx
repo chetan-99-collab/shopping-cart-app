@@ -5,7 +5,7 @@ function App() {
   const token = localStorage.getItem("token");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch('https://shopping-cart-app-6689.onrender.com/api/products')
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
